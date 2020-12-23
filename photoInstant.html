@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Photo Instant</title>
+    <link rel="icon" type="image/png" href="../paw.png"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fotografia.css">
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="fotografia-efectos.js"></script>
+</head>
+
+<body>
+    <div class="row content">
+        <div class="col-10 justify-content-center">
+            <div class="row justify-content-left borde align-items-center">
+
+                <div class="col-sm-2">
+                    <img src="fotografia/logo.png" alt="logo" title="fotografo" class="fotografo"/>
+                </div>
+
+                <div class="col-sm-8" align="right">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-sm"><span>25</span></div>
+                        <div class="col-sm" id="followers"><span>1250</span></div>
+                        <div class="col-sm"><span>8</span></div>
+                    </div>
+
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-sm"><p>Post</p></div>
+                        <div class="col-sm"><p>Followers</p></div>
+                        <div class="col-sm"><p>Follow</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-left align-items-center borde">
+                <div>
+                    <p>
+                        <span>PET RESORT</span>
+                        </br>
+                        ¿Quienes somos? 
+                        </br>
+                        Somos el mejor resort al que puedes llevar a tus mascotas.
+                        </br>
+                        Tus mascotas disfrutarán de la mejor experiencia de su vida.
+                        </br>
+                        <span>daw20</span>, <span>Sandra</span> y <span>1248 personas más</span>
+                        siguen esta cuenta
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-left align-items-center borde">
+                <div class="col-sm botones">
+                    <img src="fotografia/followers(1).png" id="follow"/>
+                    <button class="myButton" onclick="follow(this.id);" id="botonFollow"><span>Follow </span></button>
+                </div>
+                <div class="col-sm botones">
+                    <button class="myButton" onclick="direct();" id="botondirect"><span>Tíranos al direct</span></button>
+                </div>
+                <div class="col-sm botones">
+                    <button class="myButton" onclick="mail()">
+                        <span>Botón enviar Correo
+                            <img src="fotografia/email.png" id="mail"/>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row justify-content-left align-items-center borde">
+                <div class="col-sm container">
+                    <img src="fotografia/c19.jpg" alt="logo" title="Mr Bigotes" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita1" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Mr Bigotes</div>
+                    </div>
+                </div>
+
+                <div class="col-sm container">
+                    <img src="fotografia/f16.jpg" alt="logo" title="Mike Wazouzki" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita2" style="cursor: pointer" onclick="cambiarImagen(this.id)"/>
+                        </div>
+                        <div class="text">Mike Wazouzki</div>
+                    </div>
+                </div>
+                <div class="col-sm container">
+                    <img src="fotografia/f18.jpg" alt="logo" title="Alvarito Putito" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita3" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Melocotón</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-left align-items-center borde">
+                <div class="col-sm container">
+                    <img src="fotografia/f21.jpg" alt="logo" title="Wakanda" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita4" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Wakanda</div>
+                    </div>
+                </div>
+                <div class="col-sm container">
+                    <img src="fotografia/f22.jpg" alt="logo" title="Curry" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita5" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Curry</div>
+                    </div>
+                </div>
+                <div class="col-sm container">
+                    <img src="fotografia/f20.jpg" alt="logo" title="Chanel" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita6" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Chanel</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-left align-items-center borde">
+                <div class="col-sm container">
+                    <img src="fotografia/f7.jpg" alt="logo" title="Bastet" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita7" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Bastet</div>
+                    </div>
+                </div>
+                <div class="col-sm container">
+                    <img src="fotografia/f5.jpg" alt="logo" title="Gucci" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita8" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Gucci</div>
+                    </div>
+                </div>
+                <div class="col-sm container">
+                    <img src="fotografia/f3.jpg" alt="logo" title="Dafne" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita9" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Dafne</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-left align-items-center borde">
+                <div class="col-sm container">
+                    <img src="fotografia/f17.jpg" alt="logo" title="Bicho" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita10" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Bicho</div>
+                    </div>
+                </div>
+                <div class="col-sm container">
+                    <img src="fotografia/f4.jpg" alt="logo" title="Gang" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita11" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Gang</div>
+                    </div>
+                </div>
+                <div class="col-sm container">
+                    <img src="fotografia/f1.jpg" alt="logo" title="Patucos" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita12" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Patucos</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-left align-items-center borde">
+                <div class="col-sm container">
+                    <img src="fotografia/f10.jpg" alt="logo" title="Einstein" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita13" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Einstein</div>
+                    </div>
+                </div>
+                <div class="col-sm container">
+                    <img src="fotografia/f15.jpg" alt="logo" title="Chip" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita14" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Chip</div>
+                    </div>
+                </div>
+                <div class="col-sm container">
+                    <img src="fotografia/f8.jpg" alt="logo" title="Chop" class="image"/>
+                    <div class="overlay">
+                        <div class="coments">
+                            <img src="fotografia/paws(1).png" id="mgPatita15" style="cursor: pointer" onclick="cambiarImagen(this.id);"/>
+                        </div>
+                        <div class="text">Chop</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id ="wrong" class="gif" style="display:none;"><img src="fotografia/wrong.png" alt="Wrong"></div>
+        
+        <div id ="direct" class="direct" style="display:none;">
+            <h3>Dadnos tu opinión</h3>
+            <textarea cols="40" rows="5" name="opinion" placeholder="Escriba aquí su opinión..."></textarea>
+            <br>
+            <div class="directbox">
+                <button onclick="cerrar()" class="myButton">Send</button>
+                <button onclick="cerrar()" class="myButton">Close</button>
+            </div>
+            
+        </div>
+
+        <div class="parpadea alerta">
+            <img src="fotografia/alert.png" alt="alert" class="alert">
+            <h3>Página sin ánimo de lucro</h3>
+        </div>
+    </div>
+</body>
+
+</html>

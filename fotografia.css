@@ -1,0 +1,194 @@
+.borde {
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 92%;
+}
+
+.fotografo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+    line-height: 1.9em;
+}
+
+span {
+    font-weight: 700;
+    color: black;
+}
+
+
+/*********  INICIO BOTONES  *********/
+
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;
+    color: #4a4a4a;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+    background: #ffe6d1;
+    background-color: #f0f0f0;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.botones{
+    margin-bottom: 5%;
+}
+
+/*********  FIN BOTONES  *********/
+
+
+/*********  EFECTO FOTOS  *********/
+
+.container {
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: -3%;
+
+}
+
+.image {
+    display: block;
+    /*width: 21vw;
+    height: 21vw;*/
+    width: 300px;
+    height: 300px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    background-color: rgb(120, 120, 121);
+    overflow: hidden;
+    width: 300px;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    height: 17%;
+    /*width: 21vw;*/
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.coments {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/*********  FIN EFECTO FOTOS  *********/
+
+
+/*EFECTOS PARA CUANDO PULSE UN BOTÓN*/
+.gif{
+    position: absolute;
+    margin-top: 20%;
+}
+
+.direct{
+    position: absolute;
+    margin-top: 20%;
+    padding-bottom: 3px;
+    background-color: rgb(22, 146, 247);
+}
+
+.directbox {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2px;
+}
+
+h3{
+    text-align: center;
+}
+
+.row{
+    width: 99%;
+}
+
+.content{
+    justify-content: center;
+}
+
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	color: #999;
+}
+.alert{
+    width: 215px;
+    height: 199px;
+}
+.alerta{
+    margin-bottom: 5%; 
+}
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+  
+@-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; /*0.5*/ }
+    100% { opacity: 1.0; }
+}
+  
+@-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+}
+  
+@keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
